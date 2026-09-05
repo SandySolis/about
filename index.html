@@ -9,14 +9,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .cv-section {
+      margin-top: 34px;
+      padding-top: 28px;
+      border-top: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .cv-section h4 {
+      margin: 0 0 10px;
+    }
+
+    .cv-section .muted {
+      margin: 0 0 22px;
+      line-height: 1.6;
+    }
+
+    .cv-buttons {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .cv-buttons a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+    }
+
+    .cv-buttons .primary,
+    .cv-buttons .secondary {
+      margin: 0;
+    }
+
+    .contact-body > .command {
+      margin-top: 26px;
+    }
+
+    .contact-links {
+      margin-top: 24px;
+      gap: 12px;
+    }
+  </style>
 </head>
+
 <body>
   <div class="desktop">
     <header class="topbar">
       <div class="top-left">
         <button class="activities" id="activitiesBtn">Actividades</button>
       </div>
+
       <div class="top-center">Sandy :D</div>
+
       <div class="top-right">
         <span>⌁ Wi-Fi</span>
         <span>◒</span>
@@ -41,11 +90,18 @@
             <i></i>
             <i></i>
           </div>
-          <div class="window-title" id="windowTitle">~/portfolio/home</div>
-          <div class="window-actions">— □ ×</div>
+
+          <div class="window-title" id="windowTitle">
+            ~/portfolio/home
+          </div>
+
+          <div class="window-actions">
+            — □ ×
+          </div>
         </div>
 
         <div class="window-content">
+
           <section class="page active" id="home">
             <div class="hero">
               <div class="hero-copy">
@@ -54,9 +110,13 @@
                   Disponible para aprender y crear
                 </div>
 
-                <h1>Hola, soy <span>Sandy</span> 👋</h1>
+                <h1>
+                  Hola, soy <span>Sandy</span> 👋
+                </h1>
 
-                <p class="hero-role">Estudiante de Ingeniería de Sistemas Computacionales</p>
+                <p class="hero-role">
+                  Estudiante de Ingeniería de Sistemas Computacionales
+                </p>
 
                 <p class="hero-text">
                   Me gusta convertir ideas en soluciones digitales. Exploro desarrollo de software,
@@ -74,7 +134,7 @@
 
                   <a
                     class="secondary"
-                    href="assets/Cv_SandySolisMolina%20(1).pdf"
+                    href="assets/Cv_SandySolisMolina%20%281%29.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -613,7 +673,7 @@
                     <div class="cv-buttons">
                       <a
                         class="primary"
-                        href="assets/Cv_SandySolisMolina%20(1).pdf"
+                        href="assets/Cv_SandySolisMolina%20%281%29.pdf"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -638,6 +698,7 @@
               </div>
             </div>
           </section>
+
         </div>
       </section>
     </main>
