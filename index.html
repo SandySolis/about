@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio personal de Sandy Solis, estudiante de Ingeniería de Sistemas Computacionales.">
+  <title>Sandy Solis — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="desktop">
+    <header class="topbar">
+      <div class="top-left">
+        <button class="activities" id="activitiesBtn">Actividades</button>
+      </div>
+      <div class="top-center">SandyOS</div>
+      <div class="top-right">
+        <span>⌁ Wi-Fi</span><span>◒</span><span id="clock">00:00</span>
+      </div>
+    </header>
+
+    <main class="workspace">
+      <aside class="dock">
+        <button class="dock-item active" data-section="home" title="Inicio">⌂</button>
+        <button class="dock-item" data-section="about" title="Sobre mí">♙</button>
+        <button class="dock-item" data-section="skills" title="Habilidades">⌘</button>
+        <button class="dock-item" data-section="projects" title="Proyectos">▣</button>
+        <button class="dock-item" data-section="experience" title="Experiencia">▤</button>
+        <button class="dock-item" data-section="contact" title="Contacto">✉</button>
+      </aside>
+
+      <section class="window" id="appWindow">
+        <div class="window-bar">
+          <div class="window-dots"><i></i><i></i><i></i></div>
+          <div class="window-title" id="windowTitle">~/portfolio/home</div>
+          <div class="window-actions">— □ ×</div>
+        </div>
+
+        <div class="window-content">
+          <section class="page active" id="home">
+            <div class="hero">
+              <div class="hero-copy">
+                <div class="eyebrow"><span class="pulse"></span> Disponible para aprender y crear</div>
+                <h1>Hola, soy <span>Sandy</span> 👋</h1>
+                <p class="hero-role">Estudiante de Ingeniería de Sistemas Computacionales</p>
+                <p class="hero-text">
+                  Me gusta convertir ideas en soluciones digitales. Exploro desarrollo de software,
+                  bases de datos, redes y herramientas que me permitan construir proyectos útiles y reales.
+                </p>
+                <div class="hero-buttons">
+                  <button class="primary" data-go="projects">Ver mis proyectos <span>→</span></button>
+                  <button class="secondary" data-go="contact">Contactarme</button>
+                </div>
+                <div class="terminal-mini">
+                  <div><span class="prompt">sandy@portfolio</span>:~$ whoami</div>
+                  <div class="terminal-output">student_developer · peru · building things</div>
+                  <div><span class="prompt">sandy@portfolio</span>:~$ <span class="cursor"></span></div>
+                </div>
+              </div>
+
+              <div class="profile-card">
+                <div class="profile-glow"></div>
+                <div class="photo-frame">
+                  <img src="assets/profile.jpg" alt="Foto de Sandy">
+                </div>
+                <div class="profile-label">
+                  <span class="status-dot"></span>
+                  <div><strong>Sandy Solis</strong><small>@sandy-dev</small></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="quick-stats">
+              <div><strong>5°</strong><span>Ciclo</span></div>
+              <div><strong>7+</strong><span>Proyectos</span></div>
+              <div><strong>∞</strong><span>Curiosidad</span></div>
+            </div>
+          </section>
+
+          <section class="page" id="about">
+            <div class="section-heading">
+              <span class="path">$ cat about.md</span>
+              <h2>Sobre mí</h2>
+              <p>Un poco de la persona detrás del código.</p>
+            </div>
+            <div class="about-grid">
+              <div class="terminal-box">
+                <div class="terminal-head"><span>●</span><span>about.sh</span></div>
+                <pre><code><span class="code-green">const</span> sandy = {
+  carrera: <span class="code-orange">"Ingeniería de Sistemas"</span>,
+  ciclo: <span class="code-orange">5</span>,
+  enfoque: [
+    <span class="code-orange">"Software"</span>,
+    <span class="code-orange">"Bases de datos"</span>,
+    <span class="code-orange">"Redes"</span>
+  ],
+  meta: <span class="code-orange">"Seguir creciendo 🚀"</span>
+};</code></pre>
+              </div>
+              <div class="text-card">
+                <h3>Construyendo mi camino 💻</h3>
+                <p>
+                  Soy estudiante de Ingeniería de Sistemas Computacionales y disfruto aprender
+                  haciendo. Durante mi formación he trabajado en proyectos de programación,
+                  bases de datos, análisis de datos, redes y electrónica.
+                </p>
+                <p>
+                  Mi objetivo es seguir fortaleciendo mis habilidades técnicas, crear soluciones
+                  que tengan impacto y convertir cada proyecto académico en experiencia que pueda
+                  llevar al mundo profesional.
+                </p>
+                <div class="tags"><span>Aprendizaje</span><span>Creatividad</span><span>Resolución de problemas</span></div>
+              </div>
+            </div>
+          </section>
+
+          <section class="page" id="skills">
+            <div class="section-heading">
+              <span class="path">$ ls ~/skills</span>
+              <h2>Habilidades</h2>
+              <p>Herramientas que he utilizado y sigo aprendiendo.</p>
+            </div>
+            <div class="skills-grid">
+              <div class="skill-card"><span class="skill-icon">C#</span><h3>C# / .NET</h3><p>Aplicaciones de consola y desarrollo con Visual Studio.</p></div>
+              <div class="skill-card"><span class="skill-icon">SQL</span><h3>SQL / Bases de datos</h3><p>SQL Server, MySQL, consultas, procedimientos y modelado.</p></div>
+              <div class="skill-card"><span class="skill-icon">&lt;/&gt;</span><h3>Web</h3><p>HTML, CSS y JavaScript para interfaces y proyectos web.</p></div>
+              <div class="skill-card"><span class="skill-icon">⌁</span><h3>Networking</h3><p>Cisco Packet Tracer, IPv4, subnetting y configuración básica.</p></div>
+              <div class="skill-card"><span class="skill-icon">BI</span><h3>Power BI</h3><p>Dashboards y visualización de información.</p></div>
+              <div class="skill-card"><span class="skill-icon">⚡</span><h3>Arduino</h3><p>Prototipos con sensores, RTC, servo y pantallas LCD.</p></div>
+            </div>
+            <div class="tech-strip">
+              <span>PSeInt</span><span>Visual Studio</span><span>MySQL Workbench</span><span>GitHub</span><span>Packet Tracer</span><span>Arduino IDE</span>
+            </div>
+          </section>
+
+          <section class="page" id="projects">
+            <div class="section-heading">
+              <span class="path">$ find ~/projects -maxdepth 1</span>
+              <h2>Mis proyectos</h2>
+              <p>Ideas que se convirtieron en código, datos y prototipos.</p>
+            </div>
+            <div class="projects-grid">
+              <article class="project-card featured">
+                <div class="project-top"><span>01</span><span>WEB / UX</span></div>
+                <div class="folder">📁</div>
+                <h3>Moviable</h3>
+                <p>Concepto de plataforma de transporte accesible para personas con discapacidad y adultos mayores.</p>
+                <div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span><span>Supabase</span></div>
+                <button class="project-link" onclick="showToast('Aquí puedes colocar el enlace de Moviable ✨')">Ver proyecto ↗</button>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span>02</span><span>DATABASE</span></div>
+                <div class="folder">🗄️</div>
+                <h3>Rappi Perú — Data System</h3>
+                <p>Sistema de gestión de datos con base de datos y dashboard para análisis de información.</p>
+                <div class="project-tags"><span>SQL</span><span>Power BI</span><span>Excel</span></div>
+                <button class="project-link" onclick="showToast('Aquí puedes colocar el enlace del proyecto 📊')">Ver proyecto ↗</button>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span>03</span><span>C#</span></div>
+                <div class="folder">📦</div>
+                <h3>Mi Tiendita</h3>
+                <p>Sistema de inventario desarrollado en C# para gestionar productos, almacenes y operaciones.</p>
+                <div class="project-tags"><span>C#</span><span>Visual Studio</span></div>
+                <button class="project-link" onclick="showToast('Aquí puedes colocar tu repositorio de Mi Tiendita 💻')">Ver proyecto ↗</button>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span>04</span><span>IoT / ARDUINO</span></div>
+                <div class="folder">🐾</div>
+                <h3>Dispensador para mascotas</h3>
+                <p>Prototipo automático con RTC, servo y pantalla LCD para programar horarios de alimentación.</p>
+                <div class="project-tags"><span>Arduino</span><span>RTC</span><span>LCD</span></div>
+                <button class="project-link" onclick="showToast('Aquí puedes colocar fotos o video del prototipo 🐶')">Ver proyecto ↗</button>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span>05</span><span>DATABASE</span></div>
+                <div class="folder">🏋️</div>
+                <h3>Smart Fit</h3>
+                <p>Diseño de base de datos para administrar información y operaciones de un gimnasio.</p>
+                <div class="project-tags"><span>SQL</span><span>Modelado</span></div>
+                <button class="project-link" onclick="showToast('Aquí puedes colocar el enlace del proyecto 🗃️')">Ver proyecto ↗</button>
+              </article>
+              <article class="project-card">
+                <div class="project-top"><span>06</span><span>SYSTEMS</span></div>
+                <div class="folder">🏛️</div>
+                <h3>Gestión Municipal</h3>
+                <p>Propuesta de sistema para organizar trámites y servicios de una municipalidad.</p>
+                <div class="project-tags"><span>Software</span><span>UML</span><span>Database</span></div>
+                <button class="project-link" onclick="showToast('Aquí puedes agregar diagramas, documentación y demo 🏛️')">Ver proyecto ↗</button>
+              </article>
+            </div>
+          </section>
+
+          <section class="page" id="experience">
+            <div class="section-heading">
+              <span class="path">$ git log --experience</span>
+              <h2>Experiencia & formación</h2>
+              <p>Lo que he ido construyendo fuera y dentro de las aulas.</p>
+            </div>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-date">JUL 2025 — NOV 2025</div>
+                <h3>Monitora Comunitaria</h3>
+                <h4>Municipalidad del Centro Poblado de Santa María de Huachipa</h4>
+                <p>Monitoreo de incidencias, registro de ocurrencias y coordinación de comunicaciones con Serenazgo y servicios de emergencia.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-date">FORMACIÓN ACTUAL</div>
+                <h3>Ingeniería de Sistemas Computacionales</h3>
+                <h4>Universidad Privada del Norte</h4>
+                <p>Formación en programación, bases de datos, desarrollo de software, redes y tecnologías de información.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-dot"></span>
+                <div class="timeline-date">CURSOS</div>
+                <h3>Certificaciones y aprendizaje</h3>
+                <h4>UPN & formación complementaria</h4>
+                <p>Algoritmos y Programación con PSeInt · Desarrollo de Software con Visual Studio · Cisco Networking Essentials.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="page" id="contact">
+            <div class="contact-wrap">
+              <div class="section-heading">
+                <span class="path">$ ./contact.sh</span>
+                <h2>¿Hablamos?</h2>
+                <p>Estoy abierta a oportunidades, proyectos y nuevas experiencias de aprendizaje.</p>
+              </div>
+              <div class="contact-terminal">
+                <div class="terminal-head"><span>● ● ●</span><span>sandy@portfolio:~</span></div>
+                <div class="contact-body">
+                  <p><span class="prompt">sandy@portfolio</span>:~$ echo "Hola 👋"</p>
+                  <h3>Conectemos.</h3>
+                  <p class="muted">Reemplaza estos enlaces con tus cuentas reales antes de publicar.</p>
+                  <div class="contact-links">
+                    <a href="mailto:tu-correo@example.com">✉ Email <span>↗</span></a>
+                    <a href="#" onclick="showToast('Agrega aquí tu perfil de LinkedIn'); return false;">in LinkedIn <span>↗</span></a>
+                    <a href="#" onclick="showToast('Agrega aquí tu GitHub'); return false;">⌘ GitHub <span>↗</span></a>
+                  </div>
+                  <p class="command"><span class="prompt">sandy@portfolio</span>:~$ <span class="cursor"></span></p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>
