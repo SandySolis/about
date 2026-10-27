@@ -1,6 +1,6 @@
 # SandyOS — Portfolio personal
 
-Portafolio de Sandy Solis inspirado en una interfaz de escritorio/terminal tipo Linux.
+Mi portafolio
 
 ## Estructura
 
